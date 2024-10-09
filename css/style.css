@@ -246,37 +246,29 @@ nav {
 
 /* guitar */
 .guitar-list-h2 {
-    text-align: center; /* Center the text horizontally */
+    text-align: center; 
     margin-top: 10px;
-	margin-bottom: 20px; /* Remove any default top margin */
+	margin-bottom: 20px; 
     padding-top: 20px; 
 }
 
 .guitar-list {
     position: relative;
-     /* Increase the height to ensure enough space */
+     
     
 } 
 
 .guitar-list-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem; /* Smaller gap between rows */
+    gap: 1.5rem; 
 }
 
 .guitar-row {
     display: flex;
-    justify-content: center; /* Center items in the row */
-    gap: 1rem; /* Smaller gap between items */
+    justify-content: center; 
+    gap: 1rem; 
 }
-
-
-
-
-
-
-
-
 
 
 /* contact */
@@ -336,8 +328,8 @@ footer {
     color: white;
     padding: 2rem 0;
     text-align: center;
-    position: relative; /* Ensure it stays at the bottom */
-    z-index: 10; /* Ensure it doesn't overlap with other elements */
+    position: relative; 
+    z-index: 10; 
 }
 
 .footer-container {
@@ -369,6 +361,7 @@ footer {
 .footer-links a:hover {
     color: red;
 }
+/* footer */
 
 
 /* @media */
