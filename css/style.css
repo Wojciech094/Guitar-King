@@ -1,0 +1,451 @@
+/* index.html */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	padding-bottom: -50px;
+}
+
+nav {
+	z-index: 100;
+	position: sticky;
+	top: 0;
+	background-color: black;
+	color: white;
+	width: 100%;
+	line-height: 30px;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.6rem;
+	position: relative;
+	z-index: 200;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.nav-bar {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+
+	transition: all 300ms ease-in-out;
+}
+
+.nav-bar li a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	transition: color 0.3s ease;
+}
+
+.nav-bar li a:hover {
+	color: #f39c12;
+}
+
+.burger {
+	display: none;
+	cursor: pointer;
+	font-size: 24px;
+	color: white;
+	flex-direction: column;
+}
+
+.burger div {
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	margin: 5px 0;
+}
+
+.header {
+	position: relative;
+	background-image: url(../images/home-header.jpg);
+	height: 600px;
+	width: 100%;
+	background-size: cover;
+}
+
+.hero-text {
+	position: absolute;
+	font-size: 16px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: rgb(0, 0, 0);
+	text-align: center;
+}
+
+.button-1 {
+	display: inline-block;
+
+	background-color: red;
+	border-radius: 10px;
+	color: white;
+	padding: 20px 60px;
+	margin-top: 20px;
+	text-decoration: none;
+	text-align: center;
+	transition: background-color 0.3s ease;
+}
+
+.button-1:hover {
+	background-color: darkred;
+}
+
+.section-1-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	gap: 15rem;
+	background-color: grey;
+}
+
+.section-1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.img-1 {
+	background-image: url(../images/home-info.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 25px;
+	width: 400px;
+	height: 250px;
+	max-width: 100%;
+   
+}
+
+.our {
+	
+	list-style-type: disc;
+}
+
+.section-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+	gap: 2rem;
+}
+
+.reviews-h2 {
+	text-align: center;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.review-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 2rem;
+	width: 100%;
+	max-width: 1200px;
+	padding: 1rem 0;
+}
+
+.review {
+	max-width: 500px;
+	padding: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	background-color: #f9f9f9;
+	text-align: center;
+}
+
+.img-bob,
+.img-sally {
+	background-size: cover;
+	border-radius: 50%;
+	display: block;
+	margin: 0.5rem auto;
+	width: 100px;
+	height: 100px;
+}
+
+.img-bob {
+	background-image: url(../images/review-bio.jpg);
+}
+
+.img-sally {
+	background-image: url(../images/review-bio2.jpg);
+}
+
+.img-2 {
+	background-image: url(../images/product.jpg);
+	min-width: 200px;
+	max-width: 320px;
+	height: 200px;
+	background-size: cover;
+	border-radius: 10px;
+}
+
+.guitar-models-h2 {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.section-3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+	gap: 1rem;
+}
+
+.guitar-models-container {
+	display: flex;
+	flex-wrap: wrap;
+	
+	gap: 2rem;
+}
+
+.guitar-models {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	position: relative;
+}
+
+
+
+.view-button {
+   
+    
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+    background-color: darkred;
+}
+/* index.html  */
+
+/* guitar */
+.guitar-list-h2 {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 10px;
+	margin-bottom: 20px; /* Remove any default top margin */
+    padding-top: 20px; 
+}
+
+.guitar-list {
+    position: relative;
+     /* Increase the height to ensure enough space */
+    
+} 
+
+.guitar-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Smaller gap between rows */
+}
+
+.guitar-row {
+    display: flex;
+    justify-content: center; /* Center items in the row */
+    gap: 1rem; /* Smaller gap between items */
+}
+
+
+
+
+
+
+
+
+
+
+/* contact */
+
+.form-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	background-image: url(../images/home-header.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.Form-1 {
+	display: flex;
+	justify-content: center;
+	width: 600px;
+	flex-direction: column;
+	color: grey;
+	gap: 1rem;
+	border: 1px solid grey;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+.Form-1 input,
+.Form-1 label {
+	padding: 0.5rem;
+}
+
+.checkbox-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.submit {
+	background-color: red;
+	color: white;
+	padding: 0.5rem;
+	border: none;
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+.submit:hover {
+	background-color: darkred;
+}
+/* contact */
+
+/* footer */
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    position: relative; /* Ensure it stays at the bottom */
+    z-index: 10; /* Ensure it doesn't overlap with other elements */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-container p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: red;
+}
+
+
+/* @media */
+
+@media (max-width: 768px) {
+	/* nav */
+
+	.nav-bar {
+		translate: 0 -150%;
+		flex-direction: column;
+		position: absolute;
+		top: 80px;
+		right: 0;
+		background-color: black;
+		width: 100%;
+		padding: 1rem;
+	}
+
+	.nav-bar.active {
+		display: flex;
+		translate: 0 0%;
+	}
+
+	.burger {
+		display: flex;
+	}
+	/* nav */
+
+	/* body */
+	.header {
+		height: 400px;
+	}
+
+	.section-1-container {
+		flex-direction: column;
+		height: auto;
+	}
+
+	.hero-text {
+		font-size: 14px;
+		padding: 0 1rem;
+	}
+
+	.button-1 {
+		padding: 15px 50px;
+	}
+
+	.section-2 {
+		flex-direction: column;
+	}
+
+	.review-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.section-3 {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.guitar-model {
+		margin-bottom: 1rem;
+		width: 100%;
+	}
+	/* body */
+
+	/* contact */
+	.Form-1 {
+		width: 90%;
+		padding: 0.5rem;
+	}
+	/* contact */
+
+	/* footer */
+	.footer-links {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+}
