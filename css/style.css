@@ -1,3 +1,13 @@
+@import'buttons.css';
+
+
+:root{
+	--main-color: black;
+	--bg-color: white;
+	--bt-color:red;
+	
+}
+
 /* index.html */
 
 * {
@@ -15,7 +25,7 @@ nav {
 	z-index: 100;
 	position: sticky;
 	top: 0;
-	background-color: black;
+	background-color:var(--main-color);
 	color: white;
 	width: 100%;
 	line-height: 30px;
@@ -87,7 +97,7 @@ nav {
 	text-align: center;
 }
 
-.button-1 {
+/* .button-1 {
 	display: inline-block;
 
 	background-color: red;
@@ -102,7 +112,7 @@ nav {
 
 .button-1:hover {
 	background-color: darkred;
-}
+} */
 
 .section-1-container {
 	display: flex;
